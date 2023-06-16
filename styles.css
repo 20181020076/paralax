@@ -79,3 +79,38 @@ section img{
     margin-top: 20px;
     font-size: 20px;
 }
+@media (max-width:600px){
+    #text{
+        position: relative;
+        color:#fff;
+        font-size: 6em;
+        z-index: 1;
+        text-align: center;
+    
+    }
+    section{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #moon{
+    
+        width: 100%;
+        top: -90px;
+        object-fit: scale-down;
+        z-index: 10000;
+        margin-right: 150px;
+        
+
+    }
+    .description h3{
+        
+        font-size: 40px;
+        margin-bottom: 20px;
+    
+    }
+    .description p{
+        margin-top: 20px;
+        font-size: 17px;
+        text-align: justify;
+    }
+}
