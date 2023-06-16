@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <img src="/images/bg.jpg" id="bg" alt="" />
+      <img src="/images/moon.png" id="moon" alt="" />
+      <img src="/images/mountain.png" id="mountain" alt="" />
+      <img src="/images/road.png" id="road" alt="" />
+      <h2 id="text">Moon Light</h2>
+    </section>
+    <div class="description">
+      <h3>Parallax Background Scrolling</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, error
+        accusamus. Magnam, consequatur odio tempore vero quo laborum nulla
+        deleniti autem voluptatum commodi laudantium ut dolor sunt nemo
+        dignissimos facilis.
+      </p>
+    </div>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+      window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        road.style.top = value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
